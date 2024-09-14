@@ -30,7 +30,12 @@
   border: none;
   border-radius: 10px;
   padding: 1rem 0.5rem;
+  cursor: pointer;
 }
+
+select {
+    cursor: pointer;
+  }
 
 * {
   padding: 0;
@@ -92,7 +97,6 @@ button#submit {
   border: none;
   padding: 0.5rem 2rem;
   color: white;
-  /* font-weight: 600; */
 }
 
 button#submit:hover {
