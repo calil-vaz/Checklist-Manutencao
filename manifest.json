@@ -1,0 +1,6 @@
+{
+    "name": "Checklist Diário Manutenção",
+    "short_name": "App",
+    "start_url": "/",
+    "display": "standalone"
+  }
