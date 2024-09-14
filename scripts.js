@@ -95,8 +95,6 @@ function App() {
   }
 
   const date = data.value.split("-");
-  console.log(gestor.value.toUpperCase());
-
   const dateBR = `${date[2]}/${date[1]}/${date[0]}`;
 
   main.innerHTML = ``;
@@ -106,7 +104,6 @@ function App() {
   <div id="contentImgPDF">
   <img id="logo-form" src="./img/logo-gp-pereira.svg" alt="Logo Grupo Pereira">
   </div>
-
         <table>
           <thead>
             <tr>
@@ -122,13 +119,10 @@ function App() {
                 </th>
             </tr>
           </thead>
-
         
         </table>
-
         <table>
           <tbody>
-
           <tr>
           <td>
           <p>BANDEIRA: </p>
@@ -136,7 +130,6 @@ function App() {
           <td>
           <p>${bandeira.value.toUpperCase()}</p>
           </td>
-
           <td>
           <p>FILIAL: </p>
           </td>
@@ -144,7 +137,6 @@ function App() {
           <p>${filial.value}</p>
           </td>
           </tr>
-
           <tr>
           <td>
           <p>REGIONAL: </p>
@@ -152,7 +144,6 @@ function App() {
           <td>
           <p>${regional.value.toUpperCase()}</p>
           </td>
-
           <td>
           <p>DATA: </p>
           </td>
@@ -160,7 +151,6 @@ function App() {
           <p>${dateBR}</p>
           </td>
           </tr>
-
           <tr>
           <td>
           <p>TÉCNICO: </p>
@@ -168,7 +158,6 @@ function App() {
           <td>
           <p>${nomeTecnico.value.toUpperCase()}</p>
           </td>
-
           <td>
           <p>GESTOR: </p>
           </td>
@@ -176,8 +165,6 @@ function App() {
           <p>${gestor.value.toUpperCase()}</p>
           </td>
           </tr>
-
-
         </tbody>
         </table>
   
@@ -185,7 +172,6 @@ function App() {
         <div class="textPDF">
           STATUS: "C" CONFORME - "NC" NÃO CONFORME - "NA" NÃO SE APLICA 
         </div>
-
         </div>
         
     <thead>
@@ -195,7 +181,6 @@ function App() {
         <th>OBSERVAÇÕES</th>
     </tr>
     </thead>
-
     <tbody>
       <tr>
             <td class="setor">${itens[0].numero}</td>
@@ -274,10 +259,8 @@ function App() {
         </tr>              
         </tbody>
         </table>
-
         
         </div>
-
     </div>
     `;
 
@@ -323,9 +306,7 @@ function App() {
   <div id="content_img">
             <img id="logo-form" src="./img/logo-gp-pereira.svg" alt="Logo Grupo Pereira">
         </div>
-
         <form action="">
-
             <select name="bandeira" id="selectBandeira">
                 <option value="">Selecione a Bandeira</option>
                 <option value="Fort Atacadista">Fort Atacadista</option>
@@ -345,21 +326,15 @@ function App() {
                 <option value="Santa Catarina">Santa Catarina</option>
                 <option value="São Paulo">São Paulo</option>
             </select>
-
             <label>TÉCNICO DE MANUTENÇÃO:</label>
             <input id="nameTecnico" type="text">
-
             <label>FILIAL:</label>
             <input id="filial" type="number">
-
             <label>DATA:</label>
             <input type="date" id="date">
-
             <label>GESTOR DE MANUTENÇÃO</label>
             <input id="manager" type="text">
-
             <h3>STATUS: "C" CONFORME - "NC" NÃO CONFORME - "NA" NÃO SE APLICA</h3>
-
             <div class="cardItem">
                 1. SETOR CASA DE MÁQUINAS (COMPRESSORES E RACK) -
                 <select name="data-item" id="item1" class="item">
@@ -370,7 +345,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 2. NOBREAK -
                 <select name="data-item" id="item2" class="item">
@@ -381,7 +355,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 3. BANCO DE BATERIAS -
                 <select name="data-item" id="item3" class="item">
@@ -392,7 +365,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 4. GRUPO GERADOR -
                 <select name="data-item" id="item4" class="item">
@@ -403,7 +375,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 5. SUBESTAÇÃO E BANCO DE CAPACITOR -
                 <select name="data-item" id="item5" class="item">
@@ -414,7 +385,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 6. ILHAS E EXPOSITORES -
                 <select name="data-item" id="item6" class="item">
@@ -425,7 +395,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 7. CÂMARAS FRIAS -
                 <select name="data-item" id="item7" class="item">
@@ -436,7 +405,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 8. EMPILHADEIRAS -
                 <select name="data-item" id="item8" class="item">
@@ -447,7 +415,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 9. BATERIAS TRACIONÁRIAS -
                 <select name="data-item" id="item9" class="item">
@@ -458,7 +425,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 10. CARREGADORES DE BATERIA -
                 <select name="data-item" id="item10" class="item">
@@ -469,7 +435,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 11. TRANSPALETEIRAS MANUAL -
                 <select name="data-item" id="item11" class="item">
@@ -480,7 +445,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 12. ILUMINAÇÃO -
                 <select name="data-item" id="item12" class="item">
@@ -491,7 +455,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 13. AR CENTRAL -
                 <select name="data-item" id="item13" class="item">
@@ -502,7 +465,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 14. SISTEMA DE COMBATE A INCÊNDIO -
                 <select name="data-item" id="item14" class="item">
@@ -513,7 +475,6 @@ function App() {
                 </select>
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
-
             <div class="cardItem">
                 15. SISTEMA DE ÁGUA/ESGOTO -
                 <select name="data-item" id="item15" class="item">
@@ -525,10 +486,15 @@ function App() {
                 <input type="text" placeholder="Observações (Opcional)">
             </div>
         </form>
-
         <div id="contentButton">
             <button id="generate-pdf" onclick="App()">Gerar PDF</button>
         </div> 
   `;
   }, 100);
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(() => console.log('Service Worker registrado com sucesso'))
+      .catch((error) => console.log('Falha ao registrar o Service Worker:', error));
+  }
 }
